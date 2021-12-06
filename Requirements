@@ -1,0 +1,34 @@
+CANSAT REQUIREMENTS
+
+Launching a satellite is a complex process in which many things can go wrong, with severe consequences. Therefore each CanSat must meet a set of technical requirements. If your CanSat does not meet these criteria, you will not be selected for the launch event. You have to be able to demonstrate how you have met these criteria, e.g. with measurements, calculations, pictures, or other evidence.
+
+1.    All the components of the CanSat must fit inside a standard soft drinks can (115 mm height and 66 mm diameter), with the exception of the parachute. An exemption can be made for radio antennas and GPS antennas, which can be mounted externally (on the top or bottom of the can, not on the sides), based on the design. The rocket payload area has a maximum of 4.5 cm of space available per CanSat, along the can’s axial dimension (i.e. height), which must accommodate all external elements including the parachute, parachute attachment hardware and any antennas. 
+
+2.    The antennas, transducers and other elements of the CanSat cannot extend beyond the can’s diameter until it has left the launch vehicle. 
+
+3.    The mass of the CanSat must be between 300 grams and 350 grams. CanSats that are lighter must take additional ballast with them to reach the 300 grams minimum mass limit required. The rocket is designed to launch a payload with a specific mass. If the payload mass is too high or too low, it will affect the rockets flight path.
+
+4.    Explosives, flammable or other hazardous materials are strictly forbidden. All materials used must be safe for the personnel, the equipment and the environment. Material Safety Data Sheets (MSDS) will be requested in case of doubt. 
+
+5.    The parachute connection must be able to withstand up to 1,000 N of force. The strength of the parachute must be tested to ensure that the system will operate normally. This force may be applied to the parachute if the CanSat is deployed at the rockets top speed of 550 km/h 
+
+6.    The CanSat must be able to withstand vibrations resulting from an acceleration of up to 20 G. This vibrational load is applied to the CanSat during the propelled portion of the launch.
+
+7.    The CanSat must land within the security zone designated by the authorities of military terrain 't Harde.  For single stage parachutes this means that the maximum flight time is 90 seconds. This is the total flight time including lift-off to 1 km. This means the CanSat should descend from 1 km to the ground in 77 seconds. This implies an average minimum descent rate of 13 m/s. This maximum flight time also applies if attempting a directed landing. This flight time ensures that the CanSat will land close to the launch site. When systems other than single stage parachuting are used, exceptions are possible in consultation well in time before Final Design. The systems must be tested to prove that they are safe.
+
+8.    In the case you use a larger parachute that is actively deployed at a later point in your CanSat flight, it must be ensured that the parachute stays secured until your moment of deployment. Both in terms of the mechanical system and the electrical/software actuation.
+
+9.    The CanSat must be powered by a battery and/or solar panels. The systems must be able to be activated for four hours non-stop without the battery running low. The battery must be easily accessible if it has to be replaced/recharged. 
+
+10.  The CanSat must have an easily accessible master power switch.
+
+11.  The CanSat should have a recovery system, such as a parachute capable of being reused after launch. Bright coloured fabric is recommended. 
+Version: September 202111
+
+12.  Inclusion of a retrieval system (beeper, radio beacon, GPS, etc.) is recommended.
+
+13.  The total budget of the final CanSat model should not exceed €500. This does not include ground support equipment, such as laptops, power supplies, antennas. This does include the cost of the CanSat starter kit received at the start of the competition, unless it is immediately and unopened returned to the organisation upon receipt.
+
+14.  If items are obtained through sponsorships, they should be specified in the budget with the corresponding current market costs.
+
+15.  The CanSat must be flight-ready upon arrival at the launch event. A final technical inspection of the CanSats will be carried out by authorised personnel before launch.

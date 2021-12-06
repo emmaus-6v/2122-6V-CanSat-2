@@ -23,7 +23,6 @@ Launching a satellite is a complex process in which many things can go wrong, wi
 10.  The CanSat must have an easily accessible master power switch.
 
 11.  The CanSat should have a recovery system, such as a parachute capable of being reused after launch. Bright coloured fabric is recommended. 
-Version: September 202111
 
 12.  Inclusion of a retrieval system (beeper, radio beacon, GPS, etc.) is recommended.
 

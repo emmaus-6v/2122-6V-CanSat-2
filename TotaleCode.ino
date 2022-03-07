@@ -44,7 +44,7 @@ class Zoomer {
         if (currentTime - previousTime >= eventInterval) {
           tone(zoomerPin, 2000, 500);
           previousTime = currentTime;
-          Serial.print(currentTime);
+          //Serial.print(currentTime);
         }
 
       }

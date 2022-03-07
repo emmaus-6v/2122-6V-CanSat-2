@@ -1,12 +1,12 @@
 /***************************************************************************
-  Wiring BMP280:
-  VCC = 3.3V
-  GND = GND
-  SCL = A5
-  SDA = A4
-  CSB = na
-  SDO = na
- ***************************************************************************/
+   Wiring BMP280:
+   VCC = 3.3V
+   GND = GND
+   SCL = A5
+   SDA = A4
+   CSB = na
+   SDO = na
+  ***************************************************************************/
 
 #include <Wire.h>
 #include <SPI.h>
@@ -19,32 +19,45 @@ Adafruit_BMP280 bmp; // I2C
 
 const int BMP_address = 0x76;
 
-class Zoomer{
-    public:
-    int buzzerPin;
+const unsigned long eventInterval = 1000;
+
+class Zoomer {
+
+  public:
+
+    int zoomerPin = 10;
     unsigned long currentTime;
-    const unsigned long eventInterval = 1000;
     unsigned long previousTime = 0;
 
-    void update(){
-    if(bmp.readAltitude(grondHoogte) < 10.0 ){ 
-      unsigned long currentTime = millis();
+    Zoomer() {}
 
-     if (currentTime - previousTime >= eventInterval) {
-        tone(buzzerPin, 2000, 300);
-        previousTime = currentTime;
-       }
-    
+    void begin(int _zoomerPin) {
+      zoomerPin = _zoomerPin;
+      pinMode(zoomerPin, OUTPUT);
     }
-  
-  }
+
+    void gaPiepen() {
+
+      if (bmp.readAltitude(grondHoogte) < 10 ) {
+        unsigned long currentTime = millis();
+
+        if (currentTime - previousTime >= eventInterval) {
+          tone(zoomerPin, 2000, 500);
+          previousTime = currentTime;
+          Serial.print(currentTime);
+        }
+
+      }
+
+    }
 };
+
+Zoomer buzzer = Zoomer();
 
 void setup() {
   Serial.begin(9600);
-  const int buzzerPin = 10;
-  pinMode(buzzerPin, OUTPUT); // Declare the buzzer as an output
-  
+  const int zoomerPin = 10;
+
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
   }
@@ -90,5 +103,6 @@ void loop() {
   Serial1.print(bmp.readAltitude(grondHoogte)); // this should be adjusted to your local forcase
   Serial1.println(" m");
 
+  buzzer.gaPiepen();
   delay(2000);
- }
+}
